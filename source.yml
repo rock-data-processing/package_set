@@ -1,0 +1,9 @@
+name: data_processing
+
+version_control:
+    - data_processing/.*:
+      github: rock-data-processing/data_processing-$PACKAGE_BASENAME
+      branch: master
+    - data_processing/orogen/.*:
+      github: rock-data-processing/data_processing-orogen-$PACKAGE_BASENAME
+      branch: master

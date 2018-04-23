@@ -1,0 +1,9 @@
+if package_enabled?('orogen')
+
+orogen_package 'data_processing/orogen/data_analysis'
+orogen_package 'data_processing/orogen/type_to_vector'
+orogen_package 'data_processing/orogen/statistics'
+
+else
+    Autoproj.warn "oroGen is not enabled, skipping the oroGen packages"
+end
